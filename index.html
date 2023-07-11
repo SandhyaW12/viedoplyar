@@ -1,0 +1,50 @@
+<!DOCTYPE <!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title> document</title>
+  <link rel="stylesheet" href="style.css" >
+  
+</head>
+<body>
+ <header>
+ 	<h1> Video Player</h1>
+ </header>
+ <section >
+ 	
+ 	<video src="vide.mp4" width="100%" height="400" controls="controls" id="vid"></Video>
+ </section>
+ <footer>
+ 	<button id="u">
+ 		uplod video
+ 		<input type="file" accept=".mp4" id="file" onchange="uplod()" >
+ 	</button>
+  <button id="play" onclick="play()">play</button>
+  <button id="pause" onclick="pause()">pause</button>
+ </footer>
+	  <script>
+     function play()
+     {
+      var a = document.getElementById("vid");
+      a.play();
+
+     } 
+      function pause()
+      {
+      var a = document.getElementById("vid");
+      a .pause();
+
+    }
+
+
+      function uplod()
+      {
+        var a = document.getElementById("file").value.replace(/.*(\/|\\)/,'');
+        var b = document.getElementById("vid");
+        b.src="a";
+      }
+
+      
+    </script>
+</body>
+</html>
